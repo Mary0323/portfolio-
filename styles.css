@@ -1,0 +1,168 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a2e;
+    color: #eaeaea;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #16213e;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    color: #f0a500;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #eaeaea;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #f0a500;
+    text-decoration: underline;
+}
+
+section {
+    padding: 20px;
+    text-align: left;
+}
+
+.profile-pic, .project-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.about .content {
+    display: flex;
+    align-items: center;
+}
+
+.about .text {
+    margin-right: 20px;
+}
+
+.profile-pic {
+    max-width: 400px;
+    height: auto;
+}
+.skills .content {
+    display: flex;
+    align-items: center;
+}
+
+.skills .text {
+    margin-left: 20px;
+}
+
+.profile-pic {
+    max-width: 400px;
+    height: auto;
+}
+
+.services .content {
+    display: flex;
+    align-items: center;
+}
+
+.services .perfection {
+    margin-left: 25px;
+    font-size: 30px;
+    color: rgb(211, 43, 43);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.services-img {
+    max-width: 300px;
+    height: auto;
+}
+
+.text {
+    margin-top: 20px;
+}
+
+
+.project,.skills,.about,.services,.Blog {
+    background-color: #0f3460;
+    margin: 20px 0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+@media (min-width: 768px) {
+    .project, .about, .skills, {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.animated {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.contact-icons img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact form label, #contact form input, #contact form textarea, #contact form button {
+    width: 100%;
+    max-width: 500px;
+    margin: 10px 0;
+}
+
+#contact form button {
+    background-color: #f0a500;
+    color: #1a1a2e;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact form button:hover {
+    background-color: #eaeaea;
+    color: #1a1a2e;
+}
+
+html {
+    scroll-behavior: smooth;
+}
